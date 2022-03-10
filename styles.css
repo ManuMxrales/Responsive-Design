@@ -111,6 +111,7 @@ main {
     padding-top: 80px;
     padding-bottom: 30px;
     text-align: center;
+    overflow-x: hidden;
 }
 .main_exchange_container--title {
     width: 90%;
@@ -142,11 +143,22 @@ main {
     line-height: 1.6rem;
     color: #757575;
 }
+.main_tables_container {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 10px 15px;
+}
+/*
+.main_tables_container::-webkit-scrollbar {
+    display: none;
+}
+*/
 .main_currency__table {
-    width: 70%;
+    width: auto;
     min-width: 235px;
     max-width: 500px;
-    height: 360px;
+    height: 270px;
     margin: 0 auto;
     font-family: "Inter", sans-serif;
 }
@@ -158,6 +170,7 @@ main {
     color: var(--bitcoin-orange);
 }
 .currency_table_container {
+    position: relative;
     width: 90%;
     min-width: 230px;
     max-width: 300px;
@@ -215,10 +228,9 @@ main {
     background-repeat: no-repeat;
 }
 .currency_table--date{
-    width: 190px;
+    width: max-content;
     height: 30px;
-    margin: 0 auto;
-    margin-top: 15px;
+    margin: 15px auto 0;
     padding: 8px;
     border-radius: 8px;
     background-color: var(--soft-orange);
@@ -228,4 +240,96 @@ main {
     font-weight: 300;
     line-height: 1.5rem;
     color: var(--warm-black);
+}
+.main_commission_table .commission_table_title {
+    color: var(--secondary-blue);
+}
+.commission_table_date {
+    background: var(--soft-blue);
+}
+
+.main_product_detail {
+    position: relative;
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    padding: 20px 10px;
+    background-color: var(--warm-black);
+    color: var(--white);
+}
+.product_detail_batata--logo {
+    position: absolute;
+    width: 40px;
+    height: 25px;
+    top: -12px;
+    left: calc(50% - 30px);
+    background-image: url("https://i.ibb.co/4tL16BQ/batata.png");
+}
+.product_detail--title {
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 30px auto;
+    text-align: center;
+}
+.product_detail--title h2 {
+    margin-bottom: 30px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+}
+.product_detail--title p {
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color:#808080;
+}
+.product_detail--card {
+    width: 90%;
+    min-width: 288px;
+    max-width: 400px;
+    height: 150px;
+    margin: 15px auto;
+    padding: 15px;
+    background-color: var(--black);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+}
+.product_detail--card .clock {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 10px;
+    background-image: url("https://i.ibb.co/GkQhkP0/clock.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/*
+.icon-card {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 10px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.clock {
+    background-image: url("https://i.ibb.co/GkQhkP0/clock.png");
+}
+*/
+.product__card--title {
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+}
+.product__card--body {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #808080;
 }
