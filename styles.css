@@ -124,7 +124,7 @@ main {
     height: 200px;
     margin: 0 auto;
     margin-bottom: 50px;
-    background-image: url(https://i.ibb.co/VLc350F/Bitcoin.png);
+    background-image: url("https://i.ibb.co/VLc350F/Bitcoin.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -296,18 +296,8 @@ main {
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
 }
-.product_detail--card .clock {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    margin-bottom: 10px;
-    background-image: url("https://i.ibb.co/GkQhkP0/clock.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-/*
-.icon-card {
+
+.product_detail--card .icon-card {
     display: inline-block;
     width: 20px;
     height: 20px;
@@ -318,9 +308,23 @@ main {
     
 }
 .clock {
-    background-image: url("https://i.ibb.co/GkQhkP0/clock.png");
+    background-image: url("https://i.ibb.co/z7pL9B0/check-circle.png");
 }
+/*
+https://i.ibb.co/GkQhkP0/clock.png
 */
+.eye {
+    background-image: url("https://i.ibb.co/jvJymvS/eye.png");
+}
+.dollar_sign {
+    background-image: url("https://i.ibb.co/jvJymvS/eye.png");
+}
+/*
+https://i.ibb.co/bRxGPwX/dollar-sign.png
+*/
+.circle_check {
+    background-image: url("https://i.ibb.co/z7pL9B0/check-circle.png");
+}
 .product__card--title {
     margin-bottom: 15px;
     font-size: 1.8rem;
@@ -332,4 +336,206 @@ main {
     font-weight: 500;
     line-height: 1.8rem;
     color: #808080;
+}
+.bitcoin_img-container {
+    width: 100%;
+    min-width: 320px;
+    height: 60vh;  
+    background-image: url("https://i.ibb.co/3m8dy6m/bitcoinbaby2x.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+.bitcoin_img-container h2 {
+    padding-top: 60px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--white);
+}
+.main_plans_container {
+    width: 100%;
+    min-width: 320px;
+    padding-bottom: 70px;
+    text-align: center;
+}
+.plans__title {
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+.plans__title h2 {
+    padding-top: 50px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--black);
+}
+.plans__title p {
+    padding-top: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #757575;
+}
+.plans__container--slider {
+    display: flex;
+    height: 310px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+/* .plans__container--slider::-webkit-scrollbar {
+    background-color: var(--black);
+    height: 5px;
+  }
+  .plans__container--slider::-webkit-scrollbar-thumb {
+    background-color: var(--bitcoin-orange);
+  } */
+.plans_container--card {
+    position: relative;
+    scroll-snap-align: center;
+    width: 60%;
+    min-width: 230px;
+    max-width: 300px;
+    height: 250px;
+    margin: 50px 20px 0;
+    padding: 0 15px;
+    background-color: var(--white);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
+}
+.plans_container--card:hover {
+    box-shadow: 5px 8px 16px 8px #20212447;
+    border-color: #dfe1e500;
+}
+.recomendado {
+    position: absolute;
+    width: 120px;
+    height: 31px;
+    top: -15px;
+    left: calc(50% - 60px);
+    font-size: 1.2rem;
+    padding: 6px;
+    background-color: var(--bitcoin-orange);
+    border-radius: 8px;
+    color: var(--white);
+}
+.plan_card--title {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    font-size: 1.4rem;
+    font-weight: 500px;
+    line-height: 1.8rem;
+    color: black;
+}
+.plan_card--price {
+    padding: 5px 0;
+    font-size: 6.3rem;
+    font-weight: bold;
+    line-height: 5.3rem;
+    letter-spacing: -0.40rem;
+    color: black;
+}
+/* .plan_card--price span {
+    font-size: 1.2rem;
+    font-weight: 300;
+    vertical-align: text-top;
+    letter-spacing: -0.1rem;
+} */
+.plan_card--price span {
+    position: absolute;
+    top: 55px;
+    left: calc(50% - 45px);
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+.plan_card--saving {
+    font-size: 1.2rem;
+    color: #757575;
+    margin-top: 10px;
+}
+.plan-card--ca {
+    width: 150px;
+    height: 48px;
+    margin-top: 10px;
+    background-color: var(--off-white);
+    border: 2px solid var(--bitcoin-orange);
+    border-radius: 4px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--black);
+    font-family: 'DM Sans', sans-serif;
+}
+.plan-card--ca span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url("https://i.ibb.co/YjjM6Dp/orange-right-arrow.png");
+    vertical-align: text-bottom;
+}
+#basic {
+    background-color: var(--secondary-blue);
+
+}
+.plan-card_basic {
+    border: 2px solid var(--secondary-blue);
+}
+#unlimited {
+    background-color: #757575;
+    color: var(--white);
+}
+#unlimited_card {
+    color: var(--white);
+    background-color: var(--black);
+}
+.unlimited_title {
+    color: var(--white);
+}
+.unlimited_price {
+    color: var(--white); 
+}
+.unlimited_price span {
+    left: calc(50% - 55px);
+}
+.unlimited_saving {
+    color: var(--white);
+}
+.unlimited_btn {
+    background-color: var(--warm-black);
+    color: var(--white);
+}
+footer {
+    display: flex;
+    width: 100%;
+    height: 150px;
+    background-color: var(--bitcoin-orange);
+}
+footer section {
+    display: flex;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+footer .left ul{
+    display: flex;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    list-style: none;
+}
+.left li {
+    margin: 10px;
+}
+.left a {
+    text-decoration: none;
+    color: var(--white);
+}
+footer .right {
+    margin-top: 15px;
 }

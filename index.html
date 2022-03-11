@@ -23,7 +23,7 @@
         <p>
           Batabit te ayuda a navegar entre los diferentes precios y tendencias.
         </p>
-        <a href="" class="header__button"
+        <a href="#plans" class="header__button"
           >Conoce nuestros planes <span></span
         ></a>
       </div>
@@ -38,9 +38,9 @@
             monedas más importantes del mundo.
           </p>
         </div>
-       
+
         <section class="main_tables_container">
-           <!--Tabla de Monedas-->
+          <!--Tabla de Monedas-->
           <div class="main_currency__table" id="table1">
             <p class="currency__table--title">Monedas</p>
             <div class="currency_table_container">
@@ -78,7 +78,9 @@
           </div>
           <!--Tabla de Comisiones-->
           <div class="main_currency__table main_commission_table" id="table2">
-            <p class="currency__table--title commission_table_title">Comisiones</p>
+            <p class="currency__table--title commission_table_title">
+              Comisiones
+            </p>
             <div class="currency_table_container">
               <table>
                 <tr>
@@ -98,7 +100,7 @@
                   <td class="table--bottom-right table--right">$ 14.96</td>
                 </tr>
               </table>
-            <!--  <a href="#table1" class="table_go_right table_go_left">
+              <!--  <a href="#table1" class="table_go_right table_go_left">
                 <img src="https://i.ibb.co/kSH8GfT/right-arrow.png" alt="Arrow-Icon">
               </a> -->
             </div>
@@ -116,38 +118,116 @@
         </div>
         <section class="product_cards--container">
           <article class="product_detail--card">
-            <span class="clock"></span>
+            <span class="icon-card clock"></span>
             <p class="product__card--title">Tiempo real</p>
             <p class="product__card--body">
-              Nuestro API toma información minuto a minuto sobre las tasas que más determinan el comportamiento.
+              Nuestro API toma información minuto a minuto sobre las tasas que
+              más determinan el comportamiento.
             </p>
           </article>
-          <article class="product_detail--card icon-card">
-            <span class="clock"></span>
+          <article class="product_detail--card">
+            <span class="icon-card eye"></span>
             <p class="product__card--title">No hay tasas escondidas</p>
             <p class="product__card--body">
-              Ni en la compra o al momento de exit, Batabit siempre te muestra el costo real de lo que estás adquiriendo.
+              Ni en la compra o al momento de exit, Batabit siempre te muestra
+              el costo real de lo que estás adquiriendo.
             </p>
           </article>
           <article class="product_detail--card">
-            <span class="clock"></span>
+            <span class="icon-card dollar_sign"></span>
             <p class="product__card--title">Compara monedas</p>
             <p class="product__card--body">
-              No más rumores, con Babtabit sabrás el valor real de cada moneda en el mercado actual.
+              No más rumores, con Babtabit sabrás el valor real de cada moneda
+              en el mercado actual.
             </p>
           </article>
           <article class="product_detail--card">
-            <span class="clock"></span>
+            <span class="icon-card circle_check"></span>
             <p class="product__card--title">Información confiable</p>
             <p class="product__card--body">
-              Nuestras fuentes están 100% verificadas y continuamos auditando su contenido mientras se actualizan.
+              Nuestras fuentes están 100% verificadas y continuamos auditando su
+              contenido mientras se actualizan.
             </p>
           </article>
         </section>
       </section>
-      <section></section>
-      <section></section>
+      <section class="bitcoin_img-container">
+        <h2>Conócelo hoy.</h2>
+      </section>
+      <section id="plans" class="main_plans_container">
+        <div class="plans__title">
+          <h2>Escoge el plan que mejor se ajuste a ti.</h2>
+          <p>Cualquier plan te da acceso completo a nuestra plataforma.</p>
+        </div>
+        <section class="plans__container--slider">
+          <!-- Tarjeta 1 -->
+          <article class="plans_container--card">
+            <p class="recomendado" id="basic">Basic</p>
+            <div class="plan_info_container">
+              <h3 class="plan_card--title">Pago Mensual</h3>
+              <p class="plan_card--price"><span>$</span>19</p>
+              <p class="plan_card--saving">*Plan basico con todas las ventajas!.</p>
+              <button class="plan-card--ca plan-card_basic">Escoger este <span></span></button>
+            </div>
+          </article>
+          <!-- Tarjeta 2 -->
+          <article class="plans_container--card">
+            <p class="recomendado">Recomendado</p>
+            <div class="plan_info_container">
+              <h3 class="plan_card--title">Pago Anual</h3>
+              <p class="plan_card--price"><span>$</span>99</p>
+              <p class="plan_card--saving">*Ahorras $129 comparado al plan mensual.</p>
+              <button class="plan-card--ca">Escoger este <span></span></button>
+            </div>
+          </article>
+           <!-- Tarjeta 3 -->
+           <article class="plans_container--card" id="unlimited_card">
+            <p class="recomendado" id="unlimited">Unlimited</p>
+            <div class="plan_info_container unlimited_card">
+              <h3 class="plan_card--title unlimited_title">De por Vida</h3>
+              <p class="plan_card--price unlimited_price"><span>$</span>199</p>
+              <p class="plan_card--saving unlimited_saving">*Incluye todo y mas con funciones exclusivas!.</p>
+              <button class="plan-card--ca unlimited_btn">Escoger este <span></span></button>
+            </div>
+          </article>
+        </section>
+      </section>
     </main>
-    <footer></footer>
+    <footer>
+      <section class="left">
+        <ul>
+          <li> 
+            <a href="https://github.com/ManuMxrales" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+              </svg>
+              Github</a></li>
+          <li>
+            <a href="https://www.linkedin.com/in/manuel-sanchez-morales-284662227/" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <rect x="4" y="4" width="16" height="16" rx="2" />
+                <line x1="8" y1="11" x2="8" y2="16" />
+                <line x1="8" y1="8" x2="8" y2="8.01" />
+                <line x1="12" y1="16" x2="12" y2="11" />
+                <path d="M16 16v-3a2 2 0 0 0 -4 0" />
+              </svg>
+              Linkedin</a></li>
+          <li>
+          <a href="https://www.instagram.com/manu_mxrales/" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <rect x="4" y="4" width="16" height="16" rx="4" />
+              <circle cx="12" cy="12" r="3" />
+              <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+            </svg>
+            Instagram</a></li>
+        </ul>
+      </section>
+      <section class="right">
+        <img src="https://i.ibb.co/8x2TXZd/logo-footer.png" alt="Logo Batatabit 2022">
+      </section>
+    </footer>
   </body>
 </html>
